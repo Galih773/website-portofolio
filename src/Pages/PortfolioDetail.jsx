@@ -14,7 +14,7 @@ const PortfolioDetail = () => {
                     {porto.name}
                 </p>
                 <p className='text-gray-300 py-4'>
-                    // Portfolio {porto.name} Website
+                    / Portfolio {porto.name} Website
                 </p>
             </div>
             <div className='flex justify-between'>

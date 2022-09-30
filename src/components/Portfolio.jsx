@@ -14,7 +14,7 @@ const Portfolio = () => {
                     Portfolio
                 </p>
                 <p className='py-4'>
-                    // Check out some of my portfolio
+                    / Check out some of my portfolio
                 </p>
             </div>
 
