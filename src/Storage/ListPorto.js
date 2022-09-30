@@ -57,18 +57,18 @@ const porto = [
 
     {
         name: "Know Your Neigbord", 
-        imageUrl:"http://localhost:3000/image/kyn1.png", 
+        imageUrl:"image/kyn1.png", 
         path: "/kynporto",
         description: "Develop API using spring boot and Develop website using React which uses API from spring before and Google API for login. After user login, user can do CRUD.",
         slide:
         [
-            { url: "http://localhost:3000/image/kyn1.png", title: "image1" },
-            { url: "http://localhost:3000/image/kyn2.png", title: "image2" },
-            { url: "http://localhost:3000/image/kyn3.png", title: "image3" },
-            { url: "http://localhost:3000/image/kyn4.png", title: "image4" },
-            { url: "http://localhost:3000/image/kyn5.png", title: "image5" },
-            { url: "http://localhost:3000/image/kyn6.png", title: "image6" },
-            { url: "http://localhost:3000/image/kyn7.png", title: "image7" },
+            { url: "image/kyn1.png", title: "image1" },
+            { url: "image/kyn2.png", title: "image2" },
+            { url: "image/kyn3.png", title: "image3" },
+            { url: "image/kyn4.png", title: "image4" },
+            { url: "image/kyn5.png", title: "image5" },
+            { url: "image/kyn6.png", title: "image6" },
+            { url: "image/kyn7.png", title: "image7" },
         ],
         tools: 
         [
