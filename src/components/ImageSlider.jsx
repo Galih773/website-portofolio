@@ -69,7 +69,7 @@ const ImageSlider = ({ slides }) => {
 
     const slideStylesWidthBackground = {
       ...slideStyles,
-      backgroundImage: `url(${slides[currentIndex].url})`,
+      backgroundImage: `url(${process.env.PUBLIC_URL+slides[currentIndex].url})`,
     };
 
   return (

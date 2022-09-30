@@ -1,16 +1,16 @@
 const porto = [
     {
         name: "ABC Learning Center", 
-        imageUrl:"http://localhost:3000/image/abc1.png",
+        imageUrl:"image/abc1.png",
         path: "/alcporto",
         description: "Developed a learning center webiste to display information about the company and their course. In this project i only create a front-end view.",
         slide:
         [
-            { url: "http://localhost:3000/image/abc1.png", title: "image1" },
-            { url: "http://localhost:3000/image/abc2.png", title: "image2" },
-            { url: "http://localhost:3000/image/abc3.png", title: "image3" },
-            { url: "http://localhost:3000/image/abc4.png", title: "image4" },
-            { url: "http://localhost:3000/image/abc5.png", title: "image5" },
+            { url: "image/abc1.png", title: "image1" },
+            { url: "image/abc2.png", title: "image2" },
+            { url: "image/abc3.png", title: "image3" },
+            { url: "image/abc4.png", title: "image4" },
+            { url: "image/abc5.png", title: "image5" },
         ],
         tools: 
         [
@@ -20,16 +20,16 @@ const porto = [
 
     {
         name: "ABC Job Portal", 
-        imageUrl:"http://localhost:3000/image/job1.png",
+        imageUrl:"image/job1.png",
         path: "/ajpporto",
         description: "Developed a job portal website where user can search and apply job, then admin can manage data job and data user. I create front-end and back-end using spring boot mvc.",
         slide:
         [
-            { url: "http://localhost:3000/image/job1.png", title: "image1" },
-            { url: "http://localhost:3000/image/job2.png", title: "image2" },
-            { url: "http://localhost:3000/image/job3.png", title: "image3" },
-            { url: "http://localhost:3000/image/job4.png", title: "image4" },
-            { url: "http://localhost:3000/image/job5.png", title: "image5" },
+            { url: "image/job1.png", title: "image1" },
+            { url: "image/job2.png", title: "image2" },
+            { url: "image/job3.png", title: "image3" },
+            { url: "image/job4.png", title: "image4" },
+            { url: "image/job5.png", title: "image5" },
         ],
         tools: 
         [
@@ -39,15 +39,15 @@ const porto = [
 
     {
         name: "Car Bidding Portal", 
-        imageUrl:"http://localhost:3000/image/car1.png", 
+        imageUrl:"image/car1.png", 
         path: "/cbwporto",
         description: "Developed a car bidding website where user can bid and sell a car, then admin can manage car data and user data. I create front-end and back-end using spring boot mvc.",
         slide:
         [
-            { url: "http://localhost:3000/image/car1.png", title: "image1" },
-            { url: "http://localhost:3000/image/car2.png", title: "image2" },
-            { url: "http://localhost:3000/image/car3.png", title: "image3" },
-            { url: "http://localhost:3000/image/car4.png", title: "image4" },
+            { url: "image/car1.png", title: "image1" },
+            { url: "image/car2.png", title: "image2" },
+            { url: "image/car3.png", title: "image3" },
+            { url: "image/car4.png", title: "image4" },
         ],
         tools: 
         [

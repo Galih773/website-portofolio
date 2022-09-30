@@ -22,7 +22,7 @@ const Portfolio = () => {
             <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'>
                 {porto.map((porto) => (
                     <div key={porto.name}
-                    style={{backgroundImage: `url(${porto.imageUrl})`}}
+                    style={{backgroundImage: `url(${process.env.PUBLIC_URL+porto.imageUrl})`}}
                     className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
                     >
 
