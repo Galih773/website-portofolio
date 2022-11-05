@@ -117,7 +117,7 @@ const Navbar = () => {
 
 
             {/* Socila icons */}
-            {typeof(location.state) == "string" ? 
+            {typeof(location.state) == "string" || location.state === null ? 
                 <div className='hidden lg:flex fixed flex-col top-[35%] left-0 z-[5]'>
 
                     <ul>
