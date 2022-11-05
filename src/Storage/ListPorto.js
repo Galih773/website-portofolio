@@ -98,7 +98,9 @@ const porto = [
         tools: 
         [
             {name: "HTML", url:"image/html.png"},
+            {name: "CSS", url:"image/css.png"},
             {name: "SCSS", url:"image/scss.png"},
+            {name: "Tailwind", url:"image/tailwind.png"},
             {name: "JavaScript", url:"image/javascript.png"},
             {name: "Laravel", url:"image/laravel.png"},
         ]
