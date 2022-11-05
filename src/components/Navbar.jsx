@@ -13,11 +13,30 @@ const Navbar = () => {
     let location = useLocation();
     
     useEffect(() => {
-        scroller.scrollTo(location.state, {
-            smooth: true,
-            duration: 500
-        })
+        console.log(location)
+        if(typeof(location.state) == "string"){
+            scroller.scrollTo(location.state, {
+                smooth: true,
+                duration: 500
+            })
+        }
+        
     })
+
+    const downloadResume = () => {
+                // using Java Script method to get PDF file
+        fetch('Resume.pdf').then(response => {
+        response.blob().then(blob => {
+                // Creating new object of PDF file
+        const fileURL = window.URL.createObjectURL(blob);
+                // Setting various property values
+        let alink = document.createElement('a');
+        alink.href = fileURL;
+        alink.download = 'Resume.pdf';
+        alink.click();
+        })
+        })
+    }
 
   return (
     <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
@@ -98,36 +117,40 @@ const Navbar = () => {
 
 
             {/* Socila icons */}
-            <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
+            {typeof(location.state) == "string" ? 
+                <div className='hidden lg:flex fixed flex-col top-[35%] left-0 z-[5]'>
 
-                <ul>
-                    <li className='w-[160px] h-[60px] flex items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600'>
-                        <a className='flex justify-between items-center w-full text-gray-300'
-                        href="/">
-                            LinkedIn <FaLinkedin size={30}/>
-                        </a>
-                    </li>
-                    <li className='w-[160px] h-[60px] flex items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]'>
-                        <a className='flex justify-between items-center w-full text-gray-300'
-                        href="/">
-                            Github <FaGithub size={30}/>
-                        </a>
-                    </li>
-                    <li className='w-[160px] h-[60px] flex items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]'>
-                        <a className='flex justify-between items-center w-full text-gray-300'
-                        href="/">
-                            Email <HiOutlineMail size={30}/>
-                        </a>
-                    </li>
-                    <li className='w-[160px] h-[60px] flex items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]'>
-                        <a className='flex justify-between items-center w-full text-gray-300'
-                        href="/">
-                            Resume <BsFillPersonLinesFill size={30}/>
-                        </a>
-                    </li>
-                </ul>
+                    <ul>
+                        <li className='w-[160px] h-[60px] flex items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600'>
+                            <a className='flex justify-between items-center w-full text-gray-300'
+                            href="http://linkedin.com/in/mohamad-galih" target='blank'>
+                                LinkedIn <FaLinkedin size={30}/>
+                            </a>
+                        </li>
+                        <li className='w-[160px] h-[60px] flex items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]'>
+                            <a className='flex justify-between items-center w-full text-gray-300'
+                            href="https://github.com/Galih773" target='blank'>
+                                Github <FaGithub size={30}/>
+                            </a>
+                        </li>
+                        <li className='w-[160px] h-[60px] flex items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]'>
+                            <a className='flex justify-between items-center w-full text-gray-300'
+                            href="mailto:mohamadgalih16@gmail.com" target='blank'>
+                                Email <HiOutlineMail size={30}/>
+                            </a>
+                        </li>
+                        <li onClick={downloadResume} className='w-[160px] h-[60px] flex items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]'>
+                            <span className='flex justify-between items-center w-full text-gray-300'>
+                                Resume <BsFillPersonLinesFill size={30}/>
+                            </span>
+                        </li>
+                    </ul>
 
-            </div>
+                </div>
+                :
+                <></>
+            }
+            
 
     </div>
   )

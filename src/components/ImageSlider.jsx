@@ -9,45 +9,6 @@ import {FaAngleRight, FaAngleLeft} from 'react-icons/fa'
     backgroundPosition: "center",
   };
   
-  const rightArrowStyles = {
-    position: "absolute",
-    top: "50%",
-    transform: "translate(0, -50%)",
-    right: "0px",
-    fontSize: "45px",
-    color: "#efef0b",
-    zIndex: 1,
-    cursor: "pointer",
-  };
-  
-  const leftArrowStyles = {
-    position: "absolute",
-    top: "50%",
-    transform: "translate(0, -50%)",
-    left: "0px",
-    fontSize: "45px",
-    color: "#efef0b",
-    zIndex: 1,
-    cursor: "pointer",
-  };
-  
-  const sliderStyles = {
-    position: "relative",
-    height: "100%",
-  };
-  
-  const dotsContainerStyles = {
-    display: "flex",
-    justifyContent: "center",
-  };
-  
-  const dotStyle = {
-    margin: "0 3px",
-    cursor: "pointer",
-    fontSize: "20px",
-    color: "#fff",
-  };
-  
 const ImageSlider = ({ slides }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -73,20 +34,20 @@ const ImageSlider = ({ slides }) => {
     };
 
   return (
-    <div style={sliderStyles}>
+    <div className='relative h-[100%] z-[1]' >
       <div>
-        <div onClick={goToPrevious} style={leftArrowStyles}>
+        <div onClick={goToPrevious} className='absolute top-[50%] translate-x-0 translate-y-[-50%] left-0 text-[45px] text-[#efef0b] z-[1] cursor-pointer'>
           <FaAngleLeft />
         </div>
-        <div onClick={goToNext} style={rightArrowStyles}>
+        <div onClick={goToNext} className='absolute top-[50%] translate-x-0 translate-y-[-50%] right-0 text-[45px] text-[#efef0b] z-[1] cursor-pointer'>
           <FaAngleRight />
         </div>
       </div>
       <div style={slideStylesWidthBackground}></div>
-      <div style={dotsContainerStyles}>
+      <div className='flex justify-center'>
         {slides.map((slide, slideIndex) => (
           <div
-            style={dotStyle}
+            className='mb-[3px] cursor-pointer text-[20px] text-white'
             key={slideIndex}
             onClick={() => goToSlide(slideIndex)}
           >

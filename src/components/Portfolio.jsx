@@ -37,9 +37,9 @@ const Portfolio = () => {
                                 <NavLink to={porto.path} state={porto}>
                                     <button className='text-center rounded-lg px-4 py-3 m-2 text-lg bg-white text-gray-700 font-bold'>Details</button>
                                 </NavLink>
-                                <a href="/">
+                                {/* <a href="/">
                                     <button className='text-center rounded-lg px-4 py-3 m-2 text-lg bg-white text-gray-700 font-bold'>Code</button>
-                                </a>
+                                </a> */}
                             </div>
 
                         </div>

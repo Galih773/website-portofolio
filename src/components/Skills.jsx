@@ -5,6 +5,8 @@ import JavaScript from '../assets/javascript.png'
 import ReactImg from '../assets/react.png'
 import SpringBoot from '../assets/springboot2.png'
 import Tailwind from '../assets/tailwind.png'
+import Laravel from '../assets/laravel.png'
+import SCSS from '../assets/scss.png'
 
 const Skills = () => {
   return (
@@ -26,6 +28,10 @@ const Skills = () => {
                     <p className='my-4'>CSS</p>
                 </div>
                 <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-300'>
+                    <img className='w-20 mx-auto' src={SCSS} alt="html icon" />
+                    <p className='my-4'>SCSS</p>
+                </div>
+                <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-300'>
                     <img className='w-20 mx-auto' src={JavaScript} alt="html icon" />
                     <p className='my-4'>JavaScript</p>
                 </div>
@@ -40,6 +46,10 @@ const Skills = () => {
                 <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-300'>
                     <img className='w-20 mx-auto' src={Tailwind} alt="html icon" />
                     <p className='my-4'>Tailwind</p>
+                </div>
+                <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-300'>
+                    <img className='w-20 mx-auto' src={Laravel} alt="html icon" />
+                    <p className='my-4'>Laravel</p>
                 </div>
             </div>
         </div>

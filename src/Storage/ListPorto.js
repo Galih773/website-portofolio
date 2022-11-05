@@ -79,6 +79,29 @@ const porto = [
             {name: "React", url:"image/react.png"},
             {name: "Tailwind", url:"image/tailwind.png"}
         ]
+    },
+    {
+        name: "Meals On Wheels", 
+        imageUrl:"image/mow1.png", 
+        path: "/mowporto",
+        description: "This is a charitable website that prepares and delivers a hot/frozen meal to qualified adults living at home who are unable to cook for themselves due to age, disease, or disability. The website is created by 4 person and i created member modul that contain Dashboard Page, Meals Menu Page, Detail Meals, Order Page and Profile Page",
+        slide:
+        [
+            { url: "image/mow1.png", title: "image1" },
+            { url: "image/mow2.png", title: "image2" },
+            { url: "image/mow3.png", title: "image3" },
+            { url: "image/mow4.png", title: "image4" },
+            { url: "image/mow5.png", title: "image5" },
+            { url: "image/mow6.png", title: "image6" },
+            { url: "image/mow7.png", title: "image7" },
+        ],
+        tools: 
+        [
+            {name: "HTML", url:"image/html.png"},
+            {name: "SCSS", url:"image/scss.png"},
+            {name: "JavaScript", url:"image/javascript.png"},
+            {name: "Laravel", url:"image/laravel.png"},
+        ]
     }
 ]
 

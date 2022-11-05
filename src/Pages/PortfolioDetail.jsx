@@ -32,7 +32,7 @@ const PortfolioDetail = () => {
                         <p className='text-2xl font-bold inline border-b-4 border-[#efef0b] text-gray-300'>Tools</p>
                         <div className='w-full grid grid-cols-4 gap-4 text-center mt-5 text-white'>
                             {porto.tools.map((tool)=> (
-                                <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-300'>
+                                <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-300' key={tool.name}>
                                     <img className='w-10 mx-auto' 
                                     src={tool.url} alt="html icon" />
                                     <p className='my-4'>{tool.name}</p>
